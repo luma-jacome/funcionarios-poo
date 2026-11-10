@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Grindr");
+  res.send("Hello, World!");
 });
 
 app.listen(8888, () => {
