@@ -1,0 +1,22 @@
+info:
+  name: cadastrarCargo
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:2222/cadastrarCargo
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "teste",
+        "descricao": "testando."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
