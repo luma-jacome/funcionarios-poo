@@ -1,0 +1,22 @@
+info:
+  name: atualizarCargo
+  type: http
+
+http:
+  method: PUT
+  url: http://localhost:2222/atualizarCargo/
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "testee",
+        "descricao" : "testes aaa"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 17/11/2026 às 14:46
+-- Tempo de geração: 25/11/2026 às 11:05
 -- Versão do servidor: 8.4.7
 -- Versão do PHP: 8.3.28
 
@@ -33,7 +33,22 @@ CREATE TABLE IF NOT EXISTS `cargos` (
   `nome` varchar(90) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `descricao` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Despejando dados para a tabela `cargos`
+--
+
+INSERT INTO `cargos` (`id`, `nome`, `descricao`) VALUES
+(1, 'Desenvolvedor(a) de Jogos', 'Desenvolve e programa os jogos da empresa.'),
+(2, 'Designer Gráfico', 'Cria elementos visuais e materiais gráficos.'),
+(3, 'Analista de Qualidade', 'Testa os jogos e identifica possíveis erros.'),
+(4, 'Gerente de Projetos', 'Organiza equipes e acompanha o andamento dos projetos.'),
+(5, 'Desenvolvedor(a) Front-end', 'Desenvolve as interfaces visuais dos sistemas.'),
+(6, 'Modelador(a) 3D', 'Cria modelos tridimensionais de personagens e objetos.'),
+(7, 'Desenvolvedor(a) Back-end', 'Desenvolve a parte interna dos sistemas e suas funcionalidades.'),
+(8, 'Marketing Digital', 'Divulga os jogos e atrai jogadores.'),
+(9, 'Designer UI/UX', 'Planeja as interfaces e a experiência dos jogadores.');
 
 -- --------------------------------------------------------
 
@@ -59,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `funcionarios` (
 --
 
 INSERT INTO `funcionarios` (`id`, `nome`, `cpf`, `email`, `telefone`, `dataAdmissao`, `cargo`, `salario`) VALUES
-(1, 'Ana Maria Braga', '240.474.063-00', 'ana.braga353@gmail.com', '(88) 98742-6135', '', 'Desenvolvedor(a) de Jogos', 5800),
+(1, 'Ana Maria Braga', '240.474.063-00', 'ana.braga353@gmail.com', '(88) 98742-6135', '15/03/2021', 'Desenvolvedor(a) de Jogos', 5800),
 (2, 'Caio Iarley Marques', '644.036.803-00', 'iarley.caio20@gmail.com', '(88) 99631-8052', '08/07/2023', 'Designer Gráfico', 3500),
 (3, 'Maria José Grenouille', '797.099.203-00', 'jose.frog666@gmail.com', '(88) 99158-2746', '22/11/2020', 'Desenvolvedor(a) de Jogos', 6200),
 (4, 'Cerise Bianca Tsurugi', '336.550.343-0', 'bianca.papillon32@gmail.com', '(88) 98473-9201', '04/02/2024', 'Analista de Qualidade', 3800),
