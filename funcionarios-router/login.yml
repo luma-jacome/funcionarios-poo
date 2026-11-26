@@ -1,0 +1,22 @@
+info:
+  name: login
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:2222/login/
+  body:
+    type: json
+    data: |-
+      {
+        "email": "iarley.caio20@gmail.com",
+        "senha": "caio20anos"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true

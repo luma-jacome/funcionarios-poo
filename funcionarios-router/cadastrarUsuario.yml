@@ -1,0 +1,23 @@
+info:
+  name: cadastrarUsuario
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:2222/cadastrarUsuario
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "",
+        "email": "@gmail.com",
+        "senha": ""
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
